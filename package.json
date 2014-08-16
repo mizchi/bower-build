@@ -2,12 +2,12 @@
   "name": "bower-build",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/bower-build.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": "bin/bower-build",
-  "author": "",
+  "author": "mizchi",
   "license": "MIT",
   "dependencies": {
     "optimist": "^0.6.1"

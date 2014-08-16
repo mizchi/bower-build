@@ -31,6 +31,8 @@ Write your bower's overrides option by your case. See [Overrides Â· Issue #585 Â
 # TODO
 
 - Sort by its dependent
+- Concat LICENSES
+- Uglify or pipe for user
 - Gulp task
 - Grunt task
 - Add tests
