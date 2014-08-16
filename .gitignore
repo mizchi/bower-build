@@ -1,0 +1,25 @@
+### https://raw.github.com/github/gitignore/master/node.gitignore
+
+lib-cov
+lcov.info
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+bower_components/
+bower.json
+vendor*
+public
+
+pids
+logs
+results
+build
+.grunt
+
+node_modules
+
+

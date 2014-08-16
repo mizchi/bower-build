@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+var argv = require('optimist')
+  // debug
+  .boolean('debug')
+  .default('debug', false)
+  // dev
+  .boolean('dev')
+  .default('dev', false)
+  .alias('d', 'dev')
+  // out
+  .default('out', '.')
+  .alias('o', 'out')
+  // prefix
+  .default('prefix', 'vendor')
+  .alias('p', 'prefix')
+  .argv;
+
+require('../lib/bower-build')(argv)
