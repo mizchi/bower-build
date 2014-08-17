@@ -30,12 +30,12 @@ gatherDependencies = (libBowers) ->
 getMainPaths = (libBowers, bowerPath) ->
   paths = []
   for libBower in libBowers
-    {_originalSource, main} = libBower
+    {main, _originalSource} = libBower
     if typeof main is 'string'
-      paths.push path.join CWD, "#{bowerPath}/#{name}/#{main}"
+      paths.push path.join CWD, "#{bowerPath}/#{_originalSource}/#{main}"
     else if main?.length
       for i in main
-        paths.push path.join CWD, "#{bowerPath}/#{name}/#{i}"
+        paths.push path.join CWD, "#{bowerPath}/#{_originalSource}/#{i}"
   paths
 
 loadAllFiles = (paths) ->
