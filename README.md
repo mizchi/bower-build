@@ -31,7 +31,7 @@ Write your bower's overrides option by your case. See [Overrides Â· Issue #585 Â
 ## Use in node
 
 ```javascript
-bowerBuild = require('bower-build');
+var bowerBuild = require('bower-build');
 bowerBuild({dev: true, out: "dist", prefix:"all", debug: true}); //sync
 ```
 
